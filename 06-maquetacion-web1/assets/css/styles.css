@@ -279,9 +279,10 @@ body {
     right: 100%;
 }
 
-/*SOBRE MI*/
+/*ESTILOS GENERALES (SOBRE MI Y OTRAS PÁGINAS)*/
 
-.content__about {
+.content__about,
+.content__resume{
     display: block;
     height: 100%;
     min-height: 100%;
@@ -290,17 +291,20 @@ body {
     overflow: auto;
 }
 
-.about__header {
+.about__header,
+.resume__header {
     display: inline-block;
     margin-bottom: 4.5rem;
 }
 
-.about__title {
+.about__title,
+.resume__title {
     font-size: 3.2rem;
     position: relative;
 }
 
-.about__title::after {
+.about__title::after,
+.resume__title::after{
     content: "";
     position: absolute;
     top: 20px;
@@ -312,7 +316,8 @@ body {
     opacity: 0.5;
 }
 
-.title__color {
+.title__color,
+.subtitle__color {
     color: var(--color-secondary);
 }
 
@@ -350,7 +355,7 @@ body {
 
 }
 
-/* ESTILOS COMPARTIDOS ABOUT*/
+/* ESTILOS GENERALES COMPARTIDOS ABOUT Y OTRAS SECCIONES*/
 
 .about__services,
 .about__reviews,
@@ -365,7 +370,8 @@ body {
 .reviews__header,
 .clients__header,
 .prices__header,
-.extra__header{
+.extra__header,
+.resume__subheader{
     display: inline-block;
     padding-right: 1.2rem;
     margin-bottom: 2.5rem;
@@ -376,7 +382,8 @@ body {
 .reviews__title,
 .clients__title,
 .prices__title,
-.extra__title{
+.extra__title,
+.resume__subtitle{
     font-size: 2.1rem;
 }
 
@@ -384,7 +391,8 @@ body {
 .reviews__title::after,
 .clients__title::after,
 .prices__title::after,
-.extra__title::after{
+.extra__title::after,
+.resume__subtitle::after{
     content: "";
     position: absolute;
     top: 15px;
@@ -661,4 +669,13 @@ body {
     font-size: 3.6rem;
     line-height: 5rem;
     color: var(--color-subtitle);
+}
+
+/*CURRICULUM*/
+
+.resume__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
 }
