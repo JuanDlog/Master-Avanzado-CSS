@@ -12,10 +12,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/scroll.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/loader.css" />
 
+    <script type="text/javascript" defer src="assets/js/map.js"></script>
 
     <title>Portafolio - Víctor Robles </title>
-    <script type="text/javascript" defer src="#"></script>
+
 </head>
 
 <body>
@@ -170,16 +172,12 @@
 
                     <section class="contact__form-box">
 
-                        <div class="contact__map">
-
-                       <!--    <iframe
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.6374909959386!2d-13.86633748179012!3d28.5054238536894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc47c62d5a78df77%3A0x3cb651bf8f485ef2!2sC.%20Extremadura%2C%2031%2C%2035600%20Puerto%20del%20Rosario%2C%20Las%20Palmas!5e0!3m2!1ses-419!2ses!4v1760649832036!5m2!1ses-419!2ses"
-                                ></iframe>--> 
-
+                        <div class="contact__map" id="load-iframe-map">
+                            <span class="loader"></span>
                         </div>
 
                         <header class="contact__form-header">
-                            <h3 class="form-header__subtitle">¿Como Puedo <span class="subtitle__color">Ayudarte)</span>
+                            <h3 class="form-header__title">¿Como Puedo <span class="subtitle__color">Ayudarte?</span>
                             </h3>
                         </header>
 
@@ -209,21 +207,25 @@
                                 </section>
 
 
-                                <section class="form_right">
+                                <section class="form__right">
 
-                                    <div class="form__group">
+                                    <div class="form__group form__group--textarea">
                                         <textarea class="form__input form__input--textarea" name="message" required
                                             placeholder="Mensaje"></textarea>
                                         <label for="message" class="form__label">Mensaje</label>
                                     </div>
 
 
+
                                 </section>
 
-                                <input type="submit" class="form__button" value="Enviar Mensaje" />
+
 
 
                             </div>
+
+                            <input type="submit" class="form__button" value="Enviar Mensaje" />
+
                         </form>
 
 
